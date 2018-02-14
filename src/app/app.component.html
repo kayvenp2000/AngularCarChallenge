@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1 style="text-align:center;">
+  {{title}}
+</h1>
+
+<body>
+  <input type="text" placeholder="what color?" [(ngModel)]="doors"><br>
+  <input type="text" placeholder="what door?" [(ngModel)]="doors"><br>
+  <input type="text" placeholder="what mpg?" [(ngModel)]="doors"><br>
+  <input type="text" placeholder="what model?" [(ngModel)]="doors"><br>
+  <button (click)="makeCar()">Create Car</button>
+  <p *ngFor="let carArray of carArrays">
+    <span>Your car has {{carArray.colors}} colors, it has {{carArray.doors}} doors, it has {{carArray.mpg}} miles per gallon, the car's model is a {{carArray.model}}.</span>
+  </p>
+
+
+
+
+</body>
+
+<app-car></app-car>
